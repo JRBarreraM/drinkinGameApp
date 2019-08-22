@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Trident</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <img src= "{{pathToActualImage}}">
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="ion-text-center">
+        {{rules[0]}}
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" color="danger">Draw</ion-button>
+</ion-content>

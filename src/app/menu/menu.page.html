@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Pick your poison</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let dGames of drinkingGames">
+    <ion-card-header>
+      <ion-card-subtitle>
+        <img src={{dGames.image}}>
+      </ion-card-subtitle>
+      <div class="ion-text-center">
+        <ion-card-title>
+          <br>{{dGames.title}}
+        </ion-card-title>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{dGames.instructions}}
+      <ion-button expand="block" color="secondary" routerLink="../{{dGames.id}}">Play</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
